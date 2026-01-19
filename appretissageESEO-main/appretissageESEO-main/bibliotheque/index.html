@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Bibliothèque | Apprentissage MANOEL ABE</title>
+    <link rel="stylesheet" href="../css/style-global.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <h1>Apprentissage MANOEL ABE</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#projets">Projets</a></li>
+                <li><a href="index.html" class="active">Bibliothèque</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="container" style="padding-top: 2rem;">
+        <div class="breadcrumb">
+            <a href="../index.html">Accueil</a>
+            <span class="separator">/</span>
+            <span>Gestion Bibliothèque</span>
+        </div>
+    </div>
+
+    <!-- HUB HEADER -->
+    <section class="hub-header">
+        <div class="container">
+            <h1>Gestion de Bibliothèque</h1>
+            <p>Système complet de gestion de livres avec PHP et MySQL</p>
+        </div>
+    </section>
+
+    <!-- HUB CONTENT -->
+    <section class="container" style="padding: 2rem 0;">
+        <div class="hub-content">
+            <!-- Accueil -->
+            <div class="card">
+                <div class="card-icon">🏠</div>
+                <h3>Accueil</h3>
+                <p>Page principale de la bibliothèque avec informations générales.</p>
+                <a href="accueil.php" class="btn btn-secondary">Accéder →</a>
+            </div>
+
+            <!-- Liste -->
+            <div class="card">
+                <div class="card-icon">📋</div>
+                <h3>Liste des Livres</h3>
+                <p>Affiche tous les livres disponibles dans la base de données.</p>
+                <a href="liste.php" class="btn btn-secondary">Accéder →</a>
+            </div>
+
+            <!-- Ajouter -->
+            <div class="card">
+                <div class="card-icon">➕</div>
+                <h3>Ajouter Livre</h3>
+                <p>Formulaire pour ajouter un nouveau livre à la bibliothèque.</p>
+                <a href="ajouter.php" class="btn btn-secondary">Accéder →</a>
+            </div>
+
+            <!-- Supprimer -->
+            <div class="card">
+                <div class="card-icon">🗑️</div>
+                <h3>Supprimer Livre</h3>
+                <p>Supprime un livre de la bibliothèque.</p>
+                <a href="supprimer.php" class="btn btn-secondary">Accéder →</a>
+            </div>
+
+            <!-- Rechercher -->
+            <div class="card">
+                <div class="card-icon">🔍</div>
+                <h3>Rechercher Livre</h3>
+                <p>Cherche un livre par titre ou auteur.</p>
+                <a href="rechercher.php" class="btn btn-secondary">Accéder →</a>
+            </div>
+
+            <!-- Modifier -->
+            <div class="card">
+                <div class="card-icon">✏️</div>
+                <h3>Modifier Livre</h3>
+                <p>Modifie les informations d'un livre existant.</p>
+                <a href="modifier.php" class="btn btn-secondary">Accéder →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" style="margin-top: 3rem;">
+        <div class="container">
+            <p>&copy;
+                <script>
+                    const startYear = 2025;
+                    const currentYear = new Date().getFullYear();
+                    document.write(
+                        startYear === currentYear
+                            ? startYear
+                            : startYear + " - " + currentYear
+                    );
+                </script>
+                | Projet d'Apprentissage Web de MANOEL ABE |
+                3<sup>ème</sup> année Ingénieur ESEO - Paris Vélizy |<br>
+                Tous droits réservés – reproduction interdite sans mention de la source.
+                | Bibliothèque
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

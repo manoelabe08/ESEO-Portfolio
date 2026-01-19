@@ -1,0 +1,51 @@
+# Exemple de workflow pour la création et le déploiement d'un site Jekyll sur GitHub Pages
+name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+
+on:
+  # S'exécute sur des push ciblant la branche par défaut
+  push:
+    branches: ["gh-pages","main"]
+
+  # Vous permet d'exécuter ce flux de travail manuellement à partir de l'onglet Actions
+  workflow_dispatch:
+
+# Définit les autorisations du GITHUB_TOKEN pour permettre le déploiement sur les pages GitHub
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Autoriser un seul déploiement simultané, en ignorant les exécutions en file d'attente entre l'exécution en cours et la dernière exécution en file d'attente.
+# Cependant, n'annulez PAS les exécutions en cours, car nous souhaitons permettre à ces déploiements de production de se terminer.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Travail de construction
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  # Tâche de déploiement
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

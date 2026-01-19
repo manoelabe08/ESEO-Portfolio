@@ -1,0 +1,4358 @@
+{
+  "total": 154,
+  "p": 1,
+  "ps": 100,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 100,
+    "total": 154
+  },
+  "effortTotal": 655,
+  "issues": [
+    {
+      "key": "ef3c2a62-7cf8-4230-a517-88e0b0bdbd8e",
+      "rule": "css:S4667",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/app.component.scss",
+      "project": "cei_project",
+      "line": 1,
+      "textRange": {
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 0,
+        "endOffset": 0
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Unexpected empty source",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "",
+      "tags": [],
+      "creationDate": "2025-07-16T14:47:17+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "93149091-3c2e-40e2-b1d7-afb7d7971b80",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/app.component.ts",
+      "project": "cei_project",
+      "line": 12,
+      "hash": "699b548815d6cf1ab81506b30ef5b7bd",
+      "textRange": {
+        "startLine": 12,
+        "endLine": 12,
+        "startOffset": 4,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'db: DatabaseService' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "c1bc76b7-6009-4bb2-97ec-ea12fa8ef7d0",
+      "rule": "typescript:S7059",
+      "severity": "CRITICAL",
+      "component": "cei_project:src/app/app.component.ts",
+      "project": "cei_project",
+      "line": 14,
+      "hash": "0d192a2de17791a376061869e45eafde",
+      "textRange": {
+        "startLine": 14,
+        "endLine": 14,
+        "startOffset": 4,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Refactor this asynchronous operation outside of the constructor.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "be38e558-9ca2-410e-9c28-8c775cd75137",
+      "rule": "typescript:S1854",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/app.component.ts",
+      "project": "cei_project",
+      "line": 19,
+      "hash": "2a1e77ab83014fca796e5123956d47ae",
+      "textRange": {
+        "startLine": 19,
+        "endLine": 19,
+        "startOffset": 10,
+        "endOffset": 13
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this useless assignment to variable \"res\".",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "cwe",
+        "unused"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "1766d44d-fc62-41b7-b88f-bcc1085b4835",
+      "rule": "typescript:S1874",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/app.module.ts",
+      "project": "cei_project",
+      "line": 6,
+      "hash": "b71555f08abd482d115853b5dd549003",
+      "textRange": {
+        "startLine": 6,
+        "endLine": 6,
+        "startOffset": 9,
+        "endOffset": 25
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "'HttpClientModule' is deprecated.",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "cwe",
+        "type-dependent",
+        "obsolete"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "2a554c20-5170-47b7-9f64-8a4c907c528d",
+      "rule": "typescript:S1874",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/app.module.ts",
+      "project": "cei_project",
+      "line": 14,
+      "hash": "a196ecc033580769a4db1fcb770eee58",
+      "textRange": {
+        "startLine": 14,
+        "endLine": 14,
+        "startOffset": 50,
+        "endOffset": 66
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "'HttpClientModule' is deprecated.",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "cwe",
+        "type-dependent",
+        "obsolete"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "97e2007c-03a6-4c17-8b0a-6a9324bbba4a",
+      "rule": "Web:ImgWithoutAltCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/home/home.page.html",
+      "project": "cei_project",
+      "line": 7,
+      "hash": "e0ec8fbea2f793948eba95fb4fb79a3f",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 4,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add an \"alt\" attribute to this image.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility",
+        "wcag2-a"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "476b748f-ab26-410f-9bbe-d90bec37f509",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/home/home.page.html",
+      "project": "cei_project",
+      "line": 17,
+      "hash": "ff2abc9bf0021531de00ed14d2f599f8",
+      "textRange": {
+        "startLine": 17,
+        "endLine": 17,
+        "startOffset": 8,
+        "endOffset": 64
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <div> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "a48e3117-76f2-45e7-80da-ccd13bd2bce6",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/home/home.page.html",
+      "project": "cei_project",
+      "line": 25,
+      "hash": "f5557927f02d00ca65692f0660a465e0",
+      "textRange": {
+        "startLine": 25,
+        "endLine": 25,
+        "startOffset": 8,
+        "endOffset": 69
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <div> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "3b4cfa7b-c868-4703-ad53-585a1128687e",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/home/home.page.html",
+      "project": "cei_project",
+      "line": 33,
+      "hash": "db072ff981fffea8f65de5e2adf45b0a",
+      "textRange": {
+        "startLine": 33,
+        "endLine": 33,
+        "startOffset": 8,
+        "endOffset": 66
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <div> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "b62432c4-3a91-4fcc-bf7c-26289aa89ea0",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/home/home.page.html",
+      "project": "cei_project",
+      "line": 50,
+      "hash": "89d368735a1b13aab9a869a2501f3665",
+      "textRange": {
+        "startLine": 50,
+        "endLine": 50,
+        "startOffset": 4,
+        "endOffset": 51
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <div> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "399558e2-5be8-4389-be69-7af47ffc25f3",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/home/home.page.html",
+      "project": "cei_project",
+      "line": 54,
+      "hash": "f73e77be3313405f2cbde78465fc5440",
+      "textRange": {
+        "startLine": 54,
+        "endLine": 54,
+        "startOffset": 4,
+        "endOffset": 43
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <div> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "9cf688cd-4f79-403c-bd10-039efc841996",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/home/home.page.ts",
+      "project": "cei_project",
+      "line": 22,
+      "hash": "699b548815d6cf1ab81506b30ef5b7bd",
+      "textRange": {
+        "startLine": 22,
+        "endLine": 22,
+        "startOffset": 4,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'db: DatabaseService' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "370a585e-9997-4d8f-9310-1f2eed2a544f",
+      "rule": "typescript:S6544",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/home/home.page.ts",
+      "project": "cei_project",
+      "line": 27,
+      "hash": "df3ffbfe770d7d7287ee3251dbaca577",
+      "textRange": {
+        "startLine": 27,
+        "endLine": 29,
+        "startOffset": 2,
+        "endOffset": 3
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Promise-returning method provided where a void return was expected by extended/implemented type 'OnInit'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "async",
+        "type-dependent",
+        "promise"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "4ecb778a-46a3-4065-979b-4d9c76c9118b",
+      "rule": "Web:ImgWithoutAltCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/login/login.page.html",
+      "project": "cei_project",
+      "line": 3,
+      "hash": "e0ec8fbea2f793948eba95fb4fb79a3f",
+      "textRange": {
+        "startLine": 3,
+        "endLine": 3,
+        "startOffset": 4,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add an \"alt\" attribute to this image.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility",
+        "wcag2-a"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "0d90588e-5761-48fe-8351-a5bbd8155009",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/login/login.page.html",
+      "project": "cei_project",
+      "line": 14,
+      "hash": "3d2c783f72886a5dcbdc4e50d87f4350",
+      "textRange": {
+        "startLine": 14,
+        "endLine": 14,
+        "startOffset": 8,
+        "endOffset": 101
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-icon> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "10f0a569-5887-419c-a4a7-7dab3aecac83",
+      "rule": "Web:AvoidCommentedOutCodeCheck",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/login/login.page.html",
+      "project": "cei_project",
+      "line": 18,
+      "hash": "67bd1e4bd291e53ba9d1d7241a610aeb",
+      "textRange": {
+        "startLine": 18,
+        "endLine": 18,
+        "startOffset": 0,
+        "endOffset": 111
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this commented out code.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "757db4d0-99c4-40cb-9a56-00c980396f62",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/login/login.page.html",
+      "project": "cei_project",
+      "line": 20,
+      "hash": "bd9ab5f703d440f0a6231a273169464f",
+      "textRange": {
+        "startLine": 20,
+        "endLine": 20,
+        "startOffset": 4,
+        "endOffset": 65
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "e540da4e-2721-4702-8e01-6af190dfbeb8",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/login/login.page.ts",
+      "project": "cei_project",
+      "line": 22,
+      "hash": "985b6955140ba996bbec29330855eeb5",
+      "textRange": {
+        "startLine": 22,
+        "endLine": 22,
+        "startOffset": 4,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'db: DatabaseService' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "ea1b4ae4-9b33-4fb4-a581-bbf04f691342",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/login/login.page.ts",
+      "project": "cei_project",
+      "line": 23,
+      "hash": "021c1b7bb81b37f9df1d4798a92ba85d",
+      "textRange": {
+        "startLine": 23,
+        "endLine": 23,
+        "startOffset": 4,
+        "endOffset": 23
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'loadingCtrl: LoadingController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "2ed35560-54bf-4e3d-80b1-7d75c0f58b43",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/login/login.page.ts",
+      "project": "cei_project",
+      "line": 24,
+      "hash": "6f9f95593bf2e35cd3507b67c103d04f",
+      "textRange": {
+        "startLine": 24,
+        "endLine": 24,
+        "startOffset": 4,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'alertCtrl: AlertController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "0ff1aef0-7d0b-413a-8fff-6181b6d49bbe",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/login/login.page.ts",
+      "project": "cei_project",
+      "line": 25,
+      "hash": "79545631551a815c2ccb29119c92aef5",
+      "textRange": {
+        "startLine": 25,
+        "endLine": 25,
+        "startOffset": 4,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'toastCtrl: ToastController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "d572c929-8d35-4b2a-b3e3-adf7ecc0f61a",
+      "rule": "typescript:S1186",
+      "severity": "CRITICAL",
+      "component": "cei_project:src/app/login/login.page.ts",
+      "project": "cei_project",
+      "line": 28,
+      "hash": "2081060895aca8a8318c43140bb5c63f",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 29,
+        "startOffset": 13,
+        "endOffset": 3
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Unexpected empty method 'ngOnInit'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "suspicious"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "1a34d6cc-825f-441e-bc48-0e9740054e9b",
+      "rule": "typescript:S3504",
+      "severity": "CRITICAL",
+      "component": "cei_project:src/app/login/login.page.ts",
+      "project": "cei_project",
+      "line": 51,
+      "hash": "82ac6c14655aefe4636ed8b00c231504",
+      "textRange": {
+        "startLine": 51,
+        "endLine": 51,
+        "startOffset": 10,
+        "endOffset": 15
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Unexpected var, use let or const instead.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "es2015",
+        "bad-practice"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "5ace15a6-a9cd-4dc4-b889-b15dab5d16fe",
+      "rule": "typescript:S6660",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/login/login.page.ts",
+      "project": "cei_project",
+      "line": 75,
+      "hash": "e8b5585df6f648f84ed0aa184ad1cbb8",
+      "textRange": {
+        "startLine": 75,
+        "endLine": 75,
+        "startOffset": 12,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "'If' statement should not be the only statement in 'else' block",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "f4905a3b-11f6-4023-a975-34937ecfcd66",
+      "rule": "typescript:S3626",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/login/login.page.ts",
+      "project": "cei_project",
+      "line": 117,
+      "hash": "505b97969baa28c3f607a38ee02f4f2d",
+      "textRange": {
+        "startLine": 117,
+        "endLine": 117,
+        "startOffset": 4,
+        "endOffset": 11
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this redundant jump.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "redundant",
+        "clumsy"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "cf1523f6-a265-4941-a8c3-739cf905eecd",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.html",
+      "project": "cei_project",
+      "line": 7,
+      "hash": "26c7fe3fd05854680e070617a73f48a9",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 6,
+        "endOffset": 46
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "ec1f751b-0177-499d-9727-c2cfa7bb8687",
+      "rule": "Web:ImgWithoutAltCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.html",
+      "project": "cei_project",
+      "line": 14,
+      "hash": "e0ec8fbea2f793948eba95fb4fb79a3f",
+      "textRange": {
+        "startLine": 14,
+        "endLine": 14,
+        "startOffset": 4,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add an \"alt\" attribute to this image.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility",
+        "wcag2-a"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "581fb173-565b-4e8b-b383-65ca7aff4625",
+      "rule": "Web:S6793",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.html",
+      "project": "cei_project",
+      "line": 34,
+      "hash": "5f974abd53e5f8c066de090011efe6d3",
+      "textRange": {
+        "startLine": 34,
+        "endLine": 34,
+        "startOffset": 0,
+        "endOffset": 190
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The value of the attribute \"aria-required\" must be a boolean.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "4f626574-c556-4e2e-a18c-f3b79e44b65b",
+      "rule": "Web:S6793",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.html",
+      "project": "cei_project",
+      "line": 41,
+      "hash": "dbf5aae2a3377b5f36fc50a9d7cc2e62",
+      "textRange": {
+        "startLine": 41,
+        "endLine": 41,
+        "startOffset": 0,
+        "endOffset": 121
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The value of the attribute \"aria-required\" must be a boolean.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "4ac082dd-25d8-41e9-a443-6527070273bb",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.html",
+      "project": "cei_project",
+      "line": 44,
+      "hash": "a5467f134660e80e92474061e96dcfb4",
+      "textRange": {
+        "startLine": 44,
+        "endLine": 44,
+        "startOffset": 4,
+        "endOffset": 111
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "c6bbc2b4-1325-4dea-b5b5-346a9cfcebb5",
+      "rule": "Web:ImgWithoutAltCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.html",
+      "project": "cei_project",
+      "line": 48,
+      "hash": "494a0073e65244ada2e51aa3e5190c58",
+      "textRange": {
+        "startLine": 48,
+        "endLine": 48,
+        "startOffset": 4,
+        "endOffset": 112
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add an \"alt\" attribute to this image.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility",
+        "wcag2-a"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "0ec10af5-e413-43ac-a66d-9c43b632ffca",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.html",
+      "project": "cei_project",
+      "line": 50,
+      "hash": "866d7b09ead94612ec414689b7259925",
+      "textRange": {
+        "startLine": 50,
+        "endLine": 50,
+        "startOffset": 4,
+        "endOffset": 76
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "437a8046-de05-4f64-bb42-6759bab640dc",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.ts",
+      "project": "cei_project",
+      "line": 29,
+      "hash": "3d58387501448ac658d0a6f0c17aecf5",
+      "textRange": {
+        "startLine": 29,
+        "endLine": 29,
+        "startOffset": 4,
+        "endOffset": 15
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'plt: Platform' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "a97f60c8-7773-4c6a-b4d9-ab931c5862d9",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.ts",
+      "project": "cei_project",
+      "line": 30,
+      "hash": "2e447698c0852f3c59e9e252457c8fcb",
+      "textRange": {
+        "startLine": 30,
+        "endLine": 30,
+        "startOffset": 4,
+        "endOffset": 17
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'modal: ModalController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "d9758f49-bd17-4314-be59-8145dfb64093",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.ts",
+      "project": "cei_project",
+      "line": 31,
+      "hash": "957f65033924a9b4065f9239e5d4a33c",
+      "textRange": {
+        "startLine": 31,
+        "endLine": 31,
+        "startOffset": 4,
+        "endOffset": 22
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'loadingCtr: LoadingController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "0889fbd5-d1ce-4b35-85a8-59a94c16a643",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.ts",
+      "project": "cei_project",
+      "line": 32,
+      "hash": "bd8e667247fbad9560786e362ca35df2",
+      "textRange": {
+        "startLine": 32,
+        "endLine": 32,
+        "startOffset": 4,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'toastCtrl: ToastController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "21118cca-ccd7-44ec-b798-a47e3428dc2c",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.ts",
+      "project": "cei_project",
+      "line": 33,
+      "hash": "9b3e8fe6570cfcd49c450e7bf5a51269",
+      "textRange": {
+        "startLine": 33,
+        "endLine": 33,
+        "startOffset": 4,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'navCtrl: NavController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "89aa18d8-89d8-457a-b0a0-69e2f45e7696",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.ts",
+      "project": "cei_project",
+      "line": 34,
+      "hash": "699b548815d6cf1ab81506b30ef5b7bd",
+      "textRange": {
+        "startLine": 34,
+        "endLine": 34,
+        "startOffset": 4,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'db: DatabaseService' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "1ad79aac-891c-4aa5-9873-2a394a7bcaad",
+      "rule": "typescript:S4043",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.ts",
+      "project": "cei_project",
+      "line": 50,
+      "hash": "e41746c35ecc0619b26ead9743f716f8",
+      "textRange": {
+        "startLine": 50,
+        "endLine": 54,
+        "startOffset": 31,
+        "endOffset": 8
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Move this array \"sort\" operation to a separate statement or replace it with \"toSorted\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "fecf68aa-43a4-475a-8af4-f976d96abe5b",
+      "rule": "typescript:S1125",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.ts",
+      "project": "cei_project",
+      "line": 80,
+      "hash": "82734e1536e3f02c9d8cb80aa4c782fd",
+      "textRange": {
+        "startLine": 80,
+        "endLine": 80,
+        "startOffset": 34,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Refactor the code to avoid using this boolean literal.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "clumsy"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "d3d139f2-7e77-49b1-bf9d-71823589465e",
+      "rule": "typescript:S125",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.ts",
+      "project": "cei_project",
+      "line": 95,
+      "hash": "855e4b402d8efb5c3cb640eeb3547e0d",
+      "textRange": {
+        "startLine": 95,
+        "endLine": 95,
+        "startOffset": 8,
+        "endOffset": 56
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this commented out code.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "aa3e9e02-3fcc-4fe4-8111-0a3d10771e02",
+      "rule": "typescript:S3504",
+      "severity": "CRITICAL",
+      "component": "cei_project:src/app/observation-centre/observation-centre.page.ts",
+      "project": "cei_project",
+      "line": 109,
+      "hash": "82ac6c14655aefe4636ed8b00c231504",
+      "textRange": {
+        "startLine": 109,
+        "endLine": 109,
+        "startOffset": 6,
+        "endOffset": 11
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Unexpected var, use let or const instead.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "es2015",
+        "bad-practice"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "e9514792-d549-4d6c-b1e7-205b7d3a3a32",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/participation/participation.page.html",
+      "project": "cei_project",
+      "line": 7,
+      "hash": "da2647f3f50072c4b04a55754a0b6165",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 6,
+        "endOffset": 41
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "01a4954b-e036-41ed-9a35-f383def8a343",
+      "rule": "Web:ImgWithoutAltCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/participation/participation.page.html",
+      "project": "cei_project",
+      "line": 15,
+      "hash": "e0ec8fbea2f793948eba95fb4fb79a3f",
+      "textRange": {
+        "startLine": 15,
+        "endLine": 15,
+        "startOffset": 4,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add an \"alt\" attribute to this image.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility",
+        "wcag2-a"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "fcdd5ac7-5689-4e6b-976a-e46eab0442e4",
+      "rule": "Web:S6793",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/participation/participation.page.html",
+      "project": "cei_project",
+      "line": 33,
+      "hash": "5f974abd53e5f8c066de090011efe6d3",
+      "textRange": {
+        "startLine": 33,
+        "endLine": 33,
+        "startOffset": 0,
+        "endOffset": 194
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The value of the attribute \"aria-required\" must be a boolean.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "11dca7bf-b215-4207-b525-b724c5f5006d",
+      "rule": "Web:S6793",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/participation/participation.page.html",
+      "project": "cei_project",
+      "line": 40,
+      "hash": "96af6aa91bf3033dc640d7c546a29169",
+      "textRange": {
+        "startLine": 40,
+        "endLine": 40,
+        "startOffset": 0,
+        "endOffset": 90
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The value of the attribute \"aria-required\" must be a boolean.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "bd906af2-fae0-45bc-9c2b-0fc1afc7d28c",
+      "rule": "Web:S6793",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/participation/participation.page.html",
+      "project": "cei_project",
+      "line": 45,
+      "hash": "e731e3ccd6530f37182ed025c6503557",
+      "textRange": {
+        "startLine": 45,
+        "endLine": 45,
+        "startOffset": 0,
+        "endOffset": 90
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The value of the attribute \"aria-required\" must be a boolean.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "36b97a9b-1f49-450b-8fe4-04937026936a",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/participation/participation.page.html",
+      "project": "cei_project",
+      "line": 51,
+      "hash": "7d9be293cd3b7d223fb0aeb1103664eb",
+      "textRange": {
+        "startLine": 51,
+        "endLine": 51,
+        "startOffset": 4,
+        "endOffset": 118
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "22a95698-1fe2-473f-b6cc-5abbc9ce810f",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/participation/participation.page.ts",
+      "project": "cei_project",
+      "line": 25,
+      "hash": "957f65033924a9b4065f9239e5d4a33c",
+      "textRange": {
+        "startLine": 25,
+        "endLine": 25,
+        "startOffset": 4,
+        "endOffset": 22
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'loadingCtr: LoadingController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "8e84c7c0-533c-4fb0-9ebb-e50d41f23d8e",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/participation/participation.page.ts",
+      "project": "cei_project",
+      "line": 26,
+      "hash": "bd8e667247fbad9560786e362ca35df2",
+      "textRange": {
+        "startLine": 26,
+        "endLine": 26,
+        "startOffset": 4,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'toastCtrl: ToastController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "e1817727-1fa7-41e0-93ed-d86635053c8e",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/participation/participation.page.ts",
+      "project": "cei_project",
+      "line": 27,
+      "hash": "9b3e8fe6570cfcd49c450e7bf5a51269",
+      "textRange": {
+        "startLine": 27,
+        "endLine": 27,
+        "startOffset": 4,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'navCtrl: NavController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "5ad00c4f-6a85-4e21-b786-ba2d61de6302",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/participation/participation.page.ts",
+      "project": "cei_project",
+      "line": 28,
+      "hash": "699b548815d6cf1ab81506b30ef5b7bd",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 4,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'db: DatabaseService' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "6fff3513-2d95-41c9-9607-61e89958703c",
+      "rule": "typescript:S4043",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/participation/participation.page.ts",
+      "project": "cei_project",
+      "line": 42,
+      "hash": "e41746c35ecc0619b26ead9743f716f8",
+      "textRange": {
+        "startLine": 42,
+        "endLine": 46,
+        "startOffset": 31,
+        "endOffset": 8
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Move this array \"sort\" operation to a separate statement or replace it with \"toSorted\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "330e3463-41e4-487b-9771-b8d9d3194619",
+      "rule": "typescript:S1125",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/participation/participation.page.ts",
+      "project": "cei_project",
+      "line": 58,
+      "hash": "82734e1536e3f02c9d8cb80aa4c782fd",
+      "textRange": {
+        "startLine": 58,
+        "endLine": 58,
+        "startOffset": 30,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Refactor the code to avoid using this boolean literal.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "clumsy"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "d332f467-3982-45dc-845b-ab8eef542a23",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.html",
+      "project": "cei_project",
+      "line": 4,
+      "hash": "3e807234d9a11217feb10ae3bdc7ccbf",
+      "textRange": {
+        "startLine": 4,
+        "endLine": 4,
+        "startOffset": 6,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "f0c85008-2d3f-43c0-8a7f-46328b337a0e",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.html",
+      "project": "cei_project",
+      "line": 12,
+      "hash": "e0c6ec8244d22e5ac6b3d0721fb41606",
+      "textRange": {
+        "startLine": 12,
+        "endLine": 12,
+        "startOffset": 6,
+        "endOffset": 70
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "b0c22118-1ff6-4fee-8468-662649871743",
+      "rule": "Web:ImgWithoutAltCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.html",
+      "project": "cei_project",
+      "line": 19,
+      "hash": "e0ec8fbea2f793948eba95fb4fb79a3f",
+      "textRange": {
+        "startLine": 19,
+        "endLine": 19,
+        "startOffset": 4,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add an \"alt\" attribute to this image.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility",
+        "wcag2-a"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "f36d8bdf-6066-4b42-ae7a-f9cb4ca2b487",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.html",
+      "project": "cei_project",
+      "line": 29,
+      "hash": "57ff19cf184dcafb1e60ddc43bf952d9",
+      "textRange": {
+        "startLine": 29,
+        "endLine": 29,
+        "startOffset": 4,
+        "endOffset": 74
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "7d530b46-24b6-481f-9a3f-9611d701ef9a",
+      "rule": "Web:S6793",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.html",
+      "project": "cei_project",
+      "line": 35,
+      "hash": "8e9e3050622a4e263f1d09826987e808",
+      "textRange": {
+        "startLine": 35,
+        "endLine": 35,
+        "startOffset": 0,
+        "endOffset": 175
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The value of the attribute \"aria-required\" must be a boolean.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "dab51ed9-7ca2-4f36-adfe-f6bd5714a810",
+      "rule": "Web:S6793",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.html",
+      "project": "cei_project",
+      "line": 39,
+      "hash": "f694dfd957befec8834cf4801649f08e",
+      "textRange": {
+        "startLine": 39,
+        "endLine": 39,
+        "startOffset": 0,
+        "endOffset": 227
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The value of the attribute \"aria-required\" must be a boolean.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "4c72c4fd-243b-4741-89dd-bf876ffb648b",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.html",
+      "project": "cei_project",
+      "line": 42,
+      "hash": "35425ab66b95dae59bc5ea7a4d292f00",
+      "textRange": {
+        "startLine": 42,
+        "endLine": 42,
+        "startOffset": 4,
+        "endOffset": 77
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "2def90a6-37dd-4bb5-9862-a53b4f9669ef",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.ts",
+      "project": "cei_project",
+      "line": 27,
+      "hash": "985b6955140ba996bbec29330855eeb5",
+      "textRange": {
+        "startLine": 27,
+        "endLine": 27,
+        "startOffset": 4,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'db: DatabaseService' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "ad4c252a-8534-4385-9d3f-e37a82f134d1",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.ts",
+      "project": "cei_project",
+      "line": 28,
+      "hash": "021c1b7bb81b37f9df1d4798a92ba85d",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 4,
+        "endOffset": 23
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'loadingCtrl: LoadingController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "a86c294f-c191-4c4e-a158-f656b32cf0d3",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.ts",
+      "project": "cei_project",
+      "line": 29,
+      "hash": "e7450384dee6554650ca8b6060fc82df",
+      "textRange": {
+        "startLine": 29,
+        "endLine": 29,
+        "startOffset": 4,
+        "endOffset": 27
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'activetedRouter: ActivatedRoute' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "ec58766b-47c9-4efe-96f3-f5d0bbf623bc",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.ts",
+      "project": "cei_project",
+      "line": 30,
+      "hash": "6f9f95593bf2e35cd3507b67c103d04f",
+      "textRange": {
+        "startLine": 30,
+        "endLine": 30,
+        "startOffset": 4,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'alertCtrl: AlertController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "f0f4fc51-8a0b-4445-b601-c79bd6a1e243",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.ts",
+      "project": "cei_project",
+      "line": 31,
+      "hash": "79545631551a815c2ccb29119c92aef5",
+      "textRange": {
+        "startLine": 31,
+        "endLine": 31,
+        "startOffset": 4,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'toastCtrl: ToastController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "7a2b018f-ae53-4a4e-8409-ee1ab66cfa32",
+      "rule": "typescript:S6544",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.ts",
+      "project": "cei_project",
+      "line": 34,
+      "hash": "df3ffbfe770d7d7287ee3251dbaca577",
+      "textRange": {
+        "startLine": 34,
+        "endLine": 57,
+        "startOffset": 2,
+        "endOffset": 3
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Promise-returning method provided where a void return was expected by extended/implemented type 'OnInit'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "async",
+        "type-dependent",
+        "promise"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "acfaa673-2f41-4afd-b1ac-b5106803835d",
+      "rule": "typescript:S1854",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.ts",
+      "project": "cei_project",
+      "line": 84,
+      "hash": "c47841fabf85304a17e3158b38f28754",
+      "textRange": {
+        "startLine": 84,
+        "endLine": 84,
+        "startOffset": 12,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this useless assignment to variable \"result\".",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "cwe",
+        "unused"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "35734487-2df9-4ed5-bf96-8695eb2df7fc",
+      "rule": "typescript:S3626",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/password-reset/password-reset.page.ts",
+      "project": "cei_project",
+      "line": 119,
+      "hash": "505b97969baa28c3f607a38ee02f4f2d",
+      "textRange": {
+        "startLine": 119,
+        "endLine": 119,
+        "startOffset": 4,
+        "endOffset": 11
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this redundant jump.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "redundant",
+        "clumsy"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "3663061c-9dcf-47df-97df-30934aa69251",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 7,
+      "hash": "8da6d9a8f5696b85bb19999671b6a402",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 6,
+        "endOffset": 41
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "aecc59df-cf52-4cce-a22f-1655ecb1c417",
+      "rule": "Web:ImgWithoutAltCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 15,
+      "hash": "e0ec8fbea2f793948eba95fb4fb79a3f",
+      "textRange": {
+        "startLine": 15,
+        "endLine": 15,
+        "startOffset": 4,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add an \"alt\" attribute to this image.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility",
+        "wcag2-a"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "898dabab-82d6-4afa-ba32-4d9cd61db9d5",
+      "rule": "Web:S6793",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 33,
+      "hash": "5f974abd53e5f8c066de090011efe6d3",
+      "textRange": {
+        "startLine": 33,
+        "endLine": 33,
+        "startOffset": 0,
+        "endOffset": 194
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The value of the attribute \"aria-required\" must be a boolean.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "84163b1a-0e24-4974-849a-42363a1647ea",
+      "rule": "Web:S6793",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 39,
+      "hash": "c20dbd0e1ca5ca0153ea4cb2e452dfc4",
+      "textRange": {
+        "startLine": 39,
+        "endLine": 39,
+        "startOffset": 0,
+        "endOffset": 91
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The value of the attribute \"aria-required\" must be a boolean.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "49367d55-1f00-4b1a-9213-7e491e6bf5f6",
+      "rule": "Web:S6793",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 44,
+      "hash": "5f6148b2b013698a541f267808bb2551",
+      "textRange": {
+        "startLine": 44,
+        "endLine": 44,
+        "startOffset": 0,
+        "endOffset": 92
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The value of the attribute \"aria-required\" must be a boolean.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "f663ab79-9c5b-4ea6-8ac0-992162995878",
+      "rule": "Web:S6793",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 49,
+      "hash": "bc84696e0a43b50e6b2e6221bb806092",
+      "textRange": {
+        "startLine": 49,
+        "endLine": 49,
+        "startOffset": 0,
+        "endOffset": 94
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The value of the attribute \"aria-required\" must be a boolean.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "65309783-e84e-4be5-9904-7c186cab3627",
+      "rule": "Web:S6793",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 60,
+      "hash": "a6dbd3d59130001400ae5017e7e57428",
+      "textRange": {
+        "startLine": 60,
+        "endLine": 60,
+        "startOffset": 0,
+        "endOffset": 198
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The value of the attribute \"aria-required\" must be a boolean.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "824d247f-b8f4-45e9-bc32-38ae2f3dd032",
+      "rule": "Web:S6793",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 66,
+      "hash": "2e9e4783a2f796f14ae21f1ff2252feb",
+      "textRange": {
+        "startLine": 66,
+        "endLine": 66,
+        "startOffset": 0,
+        "endOffset": 77
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The value of the attribute \"aria-required\" must be a boolean.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "868497f1-09f4-4157-9a98-056db7b22522",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 70,
+      "hash": "834924bba11782069adc65f32edfd331",
+      "textRange": {
+        "startLine": 70,
+        "endLine": 70,
+        "startOffset": 12,
+        "endOffset": 86
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "eb9491df-552b-44b1-b663-090342bbe645",
+      "rule": "Web:ImgWithoutAltCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 78,
+      "hash": "cd20aae2ea1e218be4974e983c591e9a",
+      "textRange": {
+        "startLine": 78,
+        "endLine": 78,
+        "startOffset": 18,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add an \"alt\" attribute to this image.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility",
+        "wcag2-a"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "425f9f9e-8ce3-4f9c-98c4-3c91c9de3067",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 87,
+      "hash": "ab2113504b4c7695f6231b222d99714d",
+      "textRange": {
+        "startLine": 87,
+        "endLine": 87,
+        "startOffset": 16,
+        "endOffset": 97
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "be66bab2-6d12-4fbc-a621-e333c978987a",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 96,
+      "hash": "a5467f134660e80e92474061e96dcfb4",
+      "textRange": {
+        "startLine": 96,
+        "endLine": 96,
+        "startOffset": 8,
+        "endOffset": 115
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "f91eaa4b-1b89-4e26-8bda-04249bcac5e8",
+      "rule": "Web:ImgWithoutAltCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 100,
+      "hash": "992709590037c3133609619988195c80",
+      "textRange": {
+        "startLine": 100,
+        "endLine": 100,
+        "startOffset": 8,
+        "endOffset": 89
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add an \"alt\" attribute to this image.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility",
+        "wcag2-a"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "2f7ece53-8be0-4125-b611-692c4a64bdbb",
+      "rule": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/resultats/resultats.page.html",
+      "project": "cei_project",
+      "line": 106,
+      "hash": "d89bdb9b6a16a9601d3ff27a09044d7d",
+      "textRange": {
+        "startLine": 106,
+        "endLine": 106,
+        "startOffset": 4,
+        "endOffset": 145
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <ion-button> tag.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "accessibility"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "03bb7e9e-0612-447f-a796-61556bf03d40",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.ts",
+      "project": "cei_project",
+      "line": 37,
+      "hash": "3d58387501448ac658d0a6f0c17aecf5",
+      "textRange": {
+        "startLine": 37,
+        "endLine": 37,
+        "startOffset": 4,
+        "endOffset": 15
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'plt: Platform' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "6cfdbc61-e461-4495-b062-cb1439b52b72",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.ts",
+      "project": "cei_project",
+      "line": 38,
+      "hash": "957f65033924a9b4065f9239e5d4a33c",
+      "textRange": {
+        "startLine": 38,
+        "endLine": 38,
+        "startOffset": 4,
+        "endOffset": 22
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'loadingCtr: LoadingController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "f69bac7a-427c-4183-ab44-d277059bfe6d",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.ts",
+      "project": "cei_project",
+      "line": 39,
+      "hash": "bd8e667247fbad9560786e362ca35df2",
+      "textRange": {
+        "startLine": 39,
+        "endLine": 39,
+        "startOffset": 4,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'toastCtrl: ToastController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "57619d3f-2c1f-4124-8d69-89d94041a493",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.ts",
+      "project": "cei_project",
+      "line": 40,
+      "hash": "9b3e8fe6570cfcd49c450e7bf5a51269",
+      "textRange": {
+        "startLine": 40,
+        "endLine": 40,
+        "startOffset": 4,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'navCtrl: NavController' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "5aaf083f-3362-4beb-aa5f-0a6d40758a0f",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.ts",
+      "project": "cei_project",
+      "line": 41,
+      "hash": "699b548815d6cf1ab81506b30ef5b7bd",
+      "textRange": {
+        "startLine": 41,
+        "endLine": 41,
+        "startOffset": 4,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'db: DatabaseService' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "fb4bdd53-da00-4b9d-aa4a-c3d80c58e596",
+      "rule": "typescript:S6544",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.ts",
+      "project": "cei_project",
+      "line": 44,
+      "hash": "df3ffbfe770d7d7287ee3251dbaca577",
+      "textRange": {
+        "startLine": 44,
+        "endLine": 47,
+        "startOffset": 2,
+        "endOffset": 3
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Promise-returning method provided where a void return was expected by extended/implemented type 'OnInit'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "async",
+        "type-dependent",
+        "promise"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "957e8fe5-ab8b-4012-b46c-ede3e03935cb",
+      "rule": "typescript:S4043",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.ts",
+      "project": "cei_project",
+      "line": 60,
+      "hash": "e41746c35ecc0619b26ead9743f716f8",
+      "textRange": {
+        "startLine": 60,
+        "endLine": 64,
+        "startOffset": 31,
+        "endOffset": 8
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Move this array \"sort\" operation to a separate statement or replace it with \"toSorted\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "6615e580-6614-4836-a4d6-f1846b0a936a",
+      "rule": "typescript:S4043",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/resultats/resultats.page.ts",
+      "project": "cei_project",
+      "line": 69,
+      "hash": "1db5dbdb2b2f9e56056dd9ceed8e1c7c",
+      "textRange": {
+        "startLine": 69,
+        "endLine": 73,
+        "startOffset": 28,
+        "endOffset": 8
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Move this array \"sort\" operation to a separate statement or replace it with \"toSorted\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "6ac09368-d35c-445b-b1c8-5de9e993d129",
+      "rule": "typescript:S1125",
+      "severity": "MINOR",
+      "component": "cei_project:src/app/resultats/resultats.page.ts",
+      "project": "cei_project",
+      "line": 145,
+      "hash": "82734e1536e3f02c9d8cb80aa4c782fd",
+      "textRange": {
+        "startLine": 145,
+        "endLine": 145,
+        "startOffset": 32,
+        "endOffset": 36
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Refactor the code to avoid using this boolean literal.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "clumsy"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "e973ff39-9f0c-4b2f-972c-f1d11144a886",
+      "rule": "typescript:S3504",
+      "severity": "CRITICAL",
+      "component": "cei_project:src/app/resultats/resultats.page.ts",
+      "project": "cei_project",
+      "line": 166,
+      "hash": "82ac6c14655aefe4636ed8b00c231504",
+      "textRange": {
+        "startLine": 166,
+        "endLine": 166,
+        "startOffset": 6,
+        "endOffset": 11
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Unexpected var, use let or const instead.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "es2015",
+        "bad-practice"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "6bdae53b-6f00-44ae-803f-fdadde3c3b66",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/services/database.service.ts",
+      "project": "cei_project",
+      "line": 21,
+      "hash": "d72934a7703131c5696778a07b764325",
+      "textRange": {
+        "startLine": 21,
+        "endLine": 21,
+        "startOffset": 2,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'sqlite' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "4953a023-9784-4b43-9ab3-fd8786c3dd27",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/services/database.service.ts",
+      "project": "cei_project",
+      "line": 24,
+      "hash": "cad669c88886a6de072518d1639689ce",
+      "textRange": {
+        "startLine": 24,
+        "endLine": 24,
+        "startOffset": 2,
+        "endOffset": 17
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'results' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "2f433d71-af38-4a74-ba5b-ed906ef51167",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/services/database.service.ts",
+      "project": "cei_project",
+      "line": 25,
+      "hash": "c60f53299fc83d9b0072dc5a831d68e4",
+      "textRange": {
+        "startLine": 25,
+        "endLine": 25,
+        "startOffset": 2,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'obervations' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "e5433906-8e5f-473e-abbe-dc12f6933e84",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/services/database.service.ts",
+      "project": "cei_project",
+      "line": 26,
+      "hash": "e2f401220db12708919f498353714e8b",
+      "textRange": {
+        "startLine": 26,
+        "endLine": 26,
+        "startOffset": 2,
+        "endOffset": 24
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'participations' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "9e7148f8-551d-4aed-98b9-2e0c129ee532",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/services/database.service.ts",
+      "project": "cei_project",
+      "line": 27,
+      "hash": "1f493b66f135652cc1b35d8fc2fc9dcb",
+      "textRange": {
+        "startLine": 27,
+        "endLine": 27,
+        "startOffset": 2,
+        "endOffset": 23
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'bureaux_votes' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    },
+    {
+      "key": "03265c23-df1a-4f43-b5eb-4ab973e49078",
+      "rule": "typescript:S2933",
+      "severity": "MAJOR",
+      "component": "cei_project:src/app/services/database.service.ts",
+      "project": "cei_project",
+      "line": 28,
+      "hash": "2cb98fbe9405c3575966ca1f8b915c93",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 2,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Member 'candidats' is never reassigned; mark it as `readonly`.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "daniel.ntaye@sahanalytics.com",
+      "tags": [
+        "type-dependent",
+        "confusing"
+      ],
+      "creationDate": "2025-07-15T16:07:11+00:00",
+      "updateDate": "2025-07-16T14:47:17+00:00",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false
+    }
+  ],
+  "components": [
+    {
+      "key": "cei_project:src/app/home/home.page.ts",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "home.page.ts",
+      "longName": "src/app/home/home.page.ts",
+      "path": "src/app/home/home.page.ts"
+    },
+    {
+      "key": "cei_project:src/app/resultats/resultats.page.ts",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "resultats.page.ts",
+      "longName": "src/app/resultats/resultats.page.ts",
+      "path": "src/app/resultats/resultats.page.ts"
+    },
+    {
+      "key": "cei_project:src/app/observation-centre/observation-centre.page.ts",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "observation-centre.page.ts",
+      "longName": "src/app/observation-centre/observation-centre.page.ts",
+      "path": "src/app/observation-centre/observation-centre.page.ts"
+    },
+    {
+      "key": "cei_project:src/app/services/database.service.ts",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "database.service.ts",
+      "longName": "src/app/services/database.service.ts",
+      "path": "src/app/services/database.service.ts"
+    },
+    {
+      "key": "cei_project:src/app/password-reset/password-reset.page.html",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "password-reset.page.html",
+      "longName": "src/app/password-reset/password-reset.page.html",
+      "path": "src/app/password-reset/password-reset.page.html"
+    },
+    {
+      "key": "cei_project:src/app/home/home.page.html",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "home.page.html",
+      "longName": "src/app/home/home.page.html",
+      "path": "src/app/home/home.page.html"
+    },
+    {
+      "key": "cei_project:src/app/app.component.scss",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "app.component.scss",
+      "longName": "src/app/app.component.scss",
+      "path": "src/app/app.component.scss"
+    },
+    {
+      "key": "cei_project",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "CEI Project",
+      "longName": "CEI Project"
+    },
+    {
+      "key": "cei_project:src/app/resultats/resultats.page.html",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "resultats.page.html",
+      "longName": "src/app/resultats/resultats.page.html",
+      "path": "src/app/resultats/resultats.page.html"
+    },
+    {
+      "key": "cei_project:src/app/participation/participation.page.ts",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "participation.page.ts",
+      "longName": "src/app/participation/participation.page.ts",
+      "path": "src/app/participation/participation.page.ts"
+    },
+    {
+      "key": "cei_project:src/app/observation-centre/observation-centre.page.html",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "observation-centre.page.html",
+      "longName": "src/app/observation-centre/observation-centre.page.html",
+      "path": "src/app/observation-centre/observation-centre.page.html"
+    },
+    {
+      "key": "cei_project:src/app/app.module.ts",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "app.module.ts",
+      "longName": "src/app/app.module.ts",
+      "path": "src/app/app.module.ts"
+    },
+    {
+      "key": "cei_project:src/app/login/login.page.ts",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "login.page.ts",
+      "longName": "src/app/login/login.page.ts",
+      "path": "src/app/login/login.page.ts"
+    },
+    {
+      "key": "cei_project:src/app/password-reset/password-reset.page.ts",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "password-reset.page.ts",
+      "longName": "src/app/password-reset/password-reset.page.ts",
+      "path": "src/app/password-reset/password-reset.page.ts"
+    },
+    {
+      "key": "cei_project:src/app/app.component.ts",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "app.component.ts",
+      "longName": "src/app/app.component.ts",
+      "path": "src/app/app.component.ts"
+    },
+    {
+      "key": "cei_project:src/app/login/login.page.html",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "login.page.html",
+      "longName": "src/app/login/login.page.html",
+      "path": "src/app/login/login.page.html"
+    },
+    {
+      "key": "cei_project:src/app/participation/participation.page.html",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "participation.page.html",
+      "longName": "src/app/participation/participation.page.html",
+      "path": "src/app/participation/participation.page.html"
+    }
+  ],
+  "facets": []
+}

@@ -1,0 +1,93 @@
+{
+    "database": "CEIResultats2025Db",
+    "version": 1,
+    "encrypted": false,
+    "mode": "full",
+    "tables": [
+        {
+            "name": "users",
+            "schema": [
+                { "column": "id_user", "value": "INTEGER" },
+                { "column": "username", "value": "TEXT" },
+                { "column": "password", "value": "TEXT" },
+                { "column": "lieu_vote", "value": "TEXT" },
+                { "column": "code_lv", "value": "TEXT" },
+                { "column": "login_date", "value": "TEXT" },
+                { "column": "region", "value": "TEXT" },
+                { "column": "departement", "value": "TEXT" },
+                { "column": "sous_prefecture", "value": "TEXT" },
+                { "column": "commune", "value": "TEXT" },
+                { "column": "new_password", "value": "INTEGER" },
+                { "column": "access_token", "value": "TEXT" }
+            ]
+        },
+        {
+            "name": "bureaux_vote",
+            "schema": [
+                { "column": "id_bv", "value": "INTEGER PRIMARY KEY AUTOINCREMENT" },
+                { "column": "code_bv", "value": "TEXT" },
+                { "column": "bureau_vote", "value": "TEXT" }
+            ]
+        },
+        {
+            "name": "candidats",
+            "schema": [
+                { "column": "id", "value": "INTEGER" },
+                { "column": "nom_parti", "value": "TEXT" },
+                { "column": "candidat", "value": "TEXT" },
+                { "column": "sigle", "value": "TEXT" },
+                { "column": "photo", "value": "TEXT" },
+                { "column": "couleur", "value": "TEXT" }
+            ]
+        },
+        {
+           "name": "observations",
+            "schema": [
+                { "column": "id", "value": "INTEGER PRIMARY KEY AUTOINCREMENT" },
+                { "column": "message", "value": "TEXT" },
+                { "column": "code_lv", "value": "TEXT" },
+                { "column": "sent_dt", "value": "TEXT" },
+                { "column": "type", "value": "TEXT" },
+                { "column": "sync", "value": "INTEGER" }
+            ] 
+        },
+        {
+            "name": "resultats",
+            "schema": [
+                { "column": "id", "value": "INTEGER PRIMARY KEY AUTOINCREMENT" },
+                { "column": "code_bv", "value": "TEXT" },
+                { "column": "total_votants", "value": "INTEGER" },
+                { "column": "bulletins_nuls", "value": "INTEGER" },
+                { "column": "bulletins_blancs", "value": "INTEGER" },
+                { "column": "date_heure", "value": "TEXT" },
+                { "column": "scores", "value": "TEXT" },
+                { "column": "sync", "value": "INTEGER" }
+            ] 
+        },
+        {
+            "name": "participation",
+            "schema": [
+                { "column": "id", "value": "INTEGER PRIMARY KEY AUTOINCREMENT" },
+                { "column": "code_bv", "value": "TEXT" },
+                { "column": "nombre_votant_homme", "value": "INTEGER" },
+                { "column": "nombre_votant_femme", "value": "INTEGER" },
+                { "column": "date_heure", "value": "TEXT" },
+                { "column": "date_heure_envoi", "value": "TEXT" },
+                { "column": "sync", "value": "INTEGER" }
+            ] 
+        },
+        {
+            "name": "document",
+            "schema": [
+                { "column": "id", "value": "INTEGER PRIMARY KEY AUTOINCREMENT" },
+                { "column": "nom_doc", "value": "TEXT" }, 
+                { "column": "code_lv", "value": "TEXT" }, 
+                { "column": "code_bv", "value": "TEXT" }, 
+                { "column": "link", "value": "TEXT" },
+                { "column": "date_heure", "value": "TEXT" },
+                { "column": "date_heure_envoi", "value": "TEXT" },
+                { "column": "sync", "value": "INTEGER" }
+            ] 
+        }
+    ]
+}

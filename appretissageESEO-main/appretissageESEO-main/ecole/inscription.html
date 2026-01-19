@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription à une formation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <p><a href="index.html" class="retour-link">Retour à l'accueil</a></p>
+
+    <h1>Formulaire d'inscription</h1>
+
+    <div class="alert alert-warning" role="alert">
+        Attention : le cours du soir coûte 10% plus cher !
+    </div>
+
+    <form>
+        <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required><br><br>
+        </div>
+
+        <div class="form-group">
+            <p><strong>Choisissez une formation :</strong></p>
+
+            <input type="radio" id="dev" name="formation" value="dev">
+            <label for="dev">Développement Web (1000€)</label><br>
+
+            <input type="radio" id="design" name="formation" value="design">
+            <label for="design">Design Graphique (800€)</label><br>
+
+            <input type="radio" id="marketing" name="formation" value="marketing">
+            <label for="marketing">Marketing Digital (1200€)</label><br><br>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="soir" name="cours_soir">
+            <label for="soir">Cours du soir (+10%)</label><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="participants">Nombre de participants :</label>
+            <input type="number" id="participants" name="participants" min="1" value="1"><br><br>
+        </div>
+
+        <button type="button" class="btn btn-success" onclick="calculerDevis()">
+            Calculer le devis
+        </button>
+    </form>
+
+    <p id="resultat" style="margin-top: 20px; font-weight: bold; color: green;"></p>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

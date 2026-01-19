@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boulangerie | Apprentissage MANOEL ABE</title>
+    <link rel="stylesheet" href="../css/style-global.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <h1>📚 Apprentissage MANOEL ABE</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#projets">Projets</a></li>
+                <li><a href="index.html" class="active">Boulangerie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="container" style="padding-top: 2rem;">
+        <div class="breadcrumb">
+            <a href="../index.html">Accueil</a>
+            <span class="separator">/</span>
+            <span>Boulangerie</span>
+        </div>
+    </div>
+
+    <!-- HUB HEADER -->
+    <section class="hub-header">
+        <div class="container">
+            <h1>🥐 Système de Commande Boulangerie</h1>
+            <p>Deux versions: Interactive (JavaScript) et Serveur (PHP)</p>
+        </div>
+    </section>
+
+    <!-- HUB CONTENT -->
+    <section class="container" style="padding: 2rem 0;">
+        <div class="hub-content">
+            <!-- Version Simple JS -->
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Version Interactive</h3>
+                <p><strong>Technologie:</strong> HTML + CSS + JavaScript</p>
+                <p>Formulaire interactif côté navigateur avec calcul instantané du total.</p>
+                <div class="card-tags">
+                    <span class="tag html">HTML</span>
+                    <span class="tag css">CSS</span>
+                    <span class="tag js">JavaScript</span>
+                </div>
+                <a href="simple/index.html" class="btn btn-secondary">Accéder →</a>
+            </div>
+
+            <!-- Version Complexe PHP -->
+            <div class="card">
+                <div class="card-icon">🚀</div>
+                <h3>Version Serveur</h3>
+                <p><strong>Technologie:</strong> PHP avec Pages Multiples</p>
+                <p>Système complet avec pages catégoriques et traitement serveur.</p>
+                <div class="card-tags">
+                    <span class="tag html">HTML</span>
+                    <span class="tag php">PHP</span>
+                    <span class="tag css">CSS</span>
+                </div>
+                <a href="complexe/index.html" class="btn btn-secondary">Accéder →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO BOX -->
+    <section class="container" style="padding: 2rem 0; margin-top: 2rem;">
+        <div style="background: #ecf0f1; padding: 2rem; border-radius: 8px; border-left: 4px solid #3498db;">
+            <h3 style="color: #2c3e50; margin-bottom: 1rem;">Quelle version choisir?</h3>
+            <p><strong>Version Interactive:</strong> Plus rapide, idéale pour l'apprentissage du JavaScript et de la
+                manipulation du DOM.</p>
+            <p><strong>Version Serveur:</strong> Plus réaliste, montre comment traiter les données côté serveur avec
+                PHP.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" style="margin-top: 3rem;">
+        <div class="container"> 2024 -
+            <p>&copy;
+                <script>
+                    const startYear = 2025;
+                    const currentYear = new Date().getFullYear();
+                    document.write(
+                        startYear === currentYear
+                            ? startYear
+                            : startYear + " - " + currentYear
+                    );
+                </script>
+                | Projet d'Apprentissage Web de MANOEL ABE |
+                3<sup>ème</sup> année Ingénieur ESEO - Paris Vélizy |<br>
+                Tous droits réservés – reproduction interdite sans mention de la source.
+                | Boulangerie
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

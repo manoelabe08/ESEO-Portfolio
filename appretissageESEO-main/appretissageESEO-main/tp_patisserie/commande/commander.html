@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Passer une commande</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>Passer une commande</h1>
+
+    <form id="formCommande" action="validation.php" method="post">
+        <label>Nom du client :</label>
+        <input type="text" id="nomClient" name="nomClient" required><br><br>
+
+        <label>Produit :</label>
+        <select id="produit" name="produit">
+            <option value="Croissant|1.20">Croissant</option>
+            <option value="Éclair au chocolat|2.50">Éclair au chocolat</option>
+            <option value="Tarte aux fraises|3.80">Tarte aux fraises</option>
+            <option value="Pain au chocolat|1.30">Pain au chocolat</option>
+            <option value="Macaron|1.00">Macaron</option>
+        </select><br><br>
+
+        <label>Quantité :</label>
+        <input type="number" id="quantite" name="quantite" min="1" value="1"><br><br>
+
+        <label>
+            <input type="checkbox" id="livraison" name="livraison">
+            Livraison à domicile (+2 €)
+        </label><br><br>
+
+        <button type="button" id="btnCalcul">Calculer le prix</button>
+        <input type="submit" value="Valider la commande">
+    </form>
+
+
+    <p>Total : <span id="total">0.00</span> €</p>
+
+    <script>
+        const selectProduit = document.querySelector('#produit');
+        const inputQuantite = document.querySelector('#quantite');
+        const checkLivraison = document.querySelector('#livraison');
+        const spanTotal = document.querySelector('#total');
+        const btnCalcul = document.querySelector('#btnCalcul');
+        btnCalcul.addEventListener('click', function () {
+            const valeur = selectProduit.value; // ex : "Croissant|1.20"
+            const parts = valeur.split('|');
+            const prix = parseFloat(parts[1]);
+            const qte = parseInt(inputQuantite.value) || 0;
+            let total = prix * qte;
+            if (checkLivraison.checked) {
+                total += 2;
+            }
+            spanTotal.textContent = total.toFixed(2);
+        });
+    </script>
+</body>
+
+</html>

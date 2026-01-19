@@ -1,0 +1,42 @@
+ion-tab-bar {
+    position: relative;
+    bottom: 20px; /* Adjust to float it above the bottom edge */
+    width: 92%; /* Make it narrower than full width */
+    margin: 0 auto; /* Center the tab bar */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    --background: #61A061; /* Solid white background */
+  }
+  
+  // Adjust safe area for devices with notches/gestures (e.g., iPhone X)
+  ion-tabs {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .tab-selected {
+    --background: #DB812E;
+  }
+
+  ion-tab-button {
+    position: relative; /* Needed for positioning the ::before pseudo-element */
+    --color: #FFF;
+    --color-selected: #FFF;
+  
+    &.tab-selected {
+      // A simple line indicator above the active tab
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0; // Position at the top of the button
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px; // Width of the indicator line
+        height: 3px; // Thickness of the indicator line
+        background-color: #FFF; // Color of the line
+        border-radius: 2px;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+

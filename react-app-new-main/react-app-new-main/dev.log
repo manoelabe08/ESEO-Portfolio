@@ -1,0 +1,12 @@
+nohup: les entrées sont ignorées
+
+> react-app@0.0.0 dev
+> vite --host 0.0.0.0 --port 3001
+
+Port 3001 is in use, trying another one...
+
+  VITE v6.3.5  ready in 15444 ms
+
+  ➜  Local:   http://localhost:3002/
+  ➜  Network: http://192.168.245.130:3002/
+  ➜  Network: http://172.18.0.1:3002/

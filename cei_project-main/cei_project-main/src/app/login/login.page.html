@@ -1,0 +1,22 @@
+<ion-content class="background">
+  <div style="width: 80%; margin:30px auto;">
+    <img src="../assets/Logo-CEI.png">
+  </div>
+  <h3 style="text-align: center;">Scrutin présidentiel <strong style="color:#DB812E;">2025</strong></h3>
+  <form style="margin-top:16%; padding:10px;" ion-fixed>
+    <ion-list>
+      <ion-item class="redBottom">
+        <ion-input type="email" label="Nom d'utilisateur" labelPlacement="stacked" [(ngModel)]="username" name="username" aria-required="username"></ion-input>
+      </ion-item>
+
+      <ion-item class="redBottom">
+        <ion-input [type]="passwordType" label='Mot de passe' labelPlacement="stacked" [(ngModel)]="password" name="password" required></ion-input>
+        <ion-icon slot="end" [name]="passwordIcon" class="passwordIcon" (click)='hideShowPassword()'></ion-icon>
+      </ion-item>
+    </ion-list>
+    
+    <!-- <div (click)="reset_pass()" style="Margin:20px 0; text-align: center;"> Mot de passe oublié </div> -->
+
+    <ion-button expand="full" (click)="login()" class="loginBtn">Connexion</ion-button>
+  </form>
+</ion-content>

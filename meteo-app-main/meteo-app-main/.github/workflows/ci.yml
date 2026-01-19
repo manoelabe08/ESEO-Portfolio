@@ -1,0 +1,53 @@
+name: CI Pipeline for Meteo App
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: React Project Checker
+        run: |
+          test -f package.json || { echo "package.json manquant"; exit 1; }
+          test -f package-lock.json || { echo "package-lock.json manquant"; exit 1; }
+          test -f src/index.js || { echo "src/index.js manquant"; exit 1; }
+          test -f public/index.html || { echo "public/index.html manquant"; exit 1; }
+          grep '"react"' package.json || { echo "react manquant dans package.json"; exit 1; }
+          grep '"react-dom"' package.json || { echo "react-dom manquant dans package.json"; exit 1; }
+          grep '"react-scripts"' package.json || { echo "react-scripts manquant dans package.json"; exit 1; }
+
+      - name: Run tests
+        run: npm test -- --passWithNoTests
+
+      - name: Build project
+        run: npm run build
+
+      - name: Déploiement sur serveur distant
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: 192.168.245.130
+          username: anonymous
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd ~/Documents/meteo-app
+            fuser -k 8080/tcp || true
+            nohup vercel dev --listen 0.0.0.0:8080 &

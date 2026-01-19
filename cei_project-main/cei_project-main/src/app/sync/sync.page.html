@@ -1,0 +1,56 @@
+<ion-content>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/tabs/tabs/home" routerDirection="back">
+        <ion-icon style="color:#FFF;" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Synchronisation</ion-title>
+  </ion-toolbar>
+
+  <ion-card class="syncBox">
+    <ion-card-header>
+      <ion-card-title>{{ tt_participation }}</ion-card-title>
+      <ion-card-subtitle>Participation</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-button fill="clear" (click)="syncParticipations()">
+      <ion-icon name="cloud-upload-outline" style="margin-right: 7px;"></ion-icon> Synchroniser
+    </ion-button>
+  </ion-card>
+
+  <ion-card class="syncBox">
+    <ion-card-header>
+      <ion-card-title>{{ tt_observations }}</ion-card-title>
+      <ion-card-subtitle>Observations ou Incidents</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-button fill="clear" (click)="syncObservations()">
+      <ion-icon name="cloud-upload-outline" style="margin-right: 7px;"></ion-icon> Synchroniser
+    </ion-button>
+  </ion-card>
+
+  <ion-card class="syncBox">
+    <ion-card-header>
+      <ion-card-title>{{ tt_results }}</ion-card-title>
+      <ion-card-subtitle>Résultats</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-button fill="clear" (click)="syncSaisies()">
+      <ion-icon name="cloud-upload-outline" style="margin-right: 7px;"></ion-icon> Synchroniser
+    </ion-button>
+  </ion-card> 
+
+  <ion-card class="syncBoxDoc">
+    <ion-card-header>
+      <ion-card-title>{{ tt_documents }}</ion-card-title>
+      <ion-card-subtitle>Documents</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-button fill="clear" (click)="syncDocument()">
+      <ion-icon name="cloud-upload-outline" style="margin-right: 7px;"></ion-icon> Synchroniser
+    </ion-button>
+  </ion-card> 
+
+</ion-content>

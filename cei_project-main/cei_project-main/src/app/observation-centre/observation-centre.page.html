@@ -1,0 +1,54 @@
+<ion-content>
+  <ion-toolbar>
+
+    <ion-title>Envoi d’observation</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="saveObservation()">
+        <ion-icon style="color:#FFF;" name="save-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <div style="width: 60%; margin:0 auto 30px auto;">
+    <img src="../assets/Logo-CEI.png">
+  </div>
+
+  <h3 style="text-align: center;">Scrutin présidentiel <strong style="color:#DB812E;">2025</strong></h3>
+
+  <ion-list style="padding: 20px; margin-bottom: 60px;">
+    <ion-item class="redBottom">
+      <ion-label>Date du jour</ion-label>  
+      <p>{{ date_jour }}</p>
+    </ion-item>
+
+    <ion-item class="redBottom">
+      <ion-select label="Type d'observation" labelPlacement="stacked" [(ngModel)]="type" name="type" interface="action-sheet" aria-required="type" placeholder="Choix du type d'observation">
+        <ion-select-option value="Urgence sécuritaire">Urgence sécuritaire</ion-select-option>
+        <ion-select-option value="Incident technique">Incident technique</ion-select-option>
+        <ion-select-option value="Information générale">Information générale</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item class="redBottom">
+      <ion-select label="Bureau de vote" labelPlacement="stacked" [(ngModel)]="code_bv" name="code_bv" interface="action-sheet" aria-required="code_bv" placeholder="Choix du bureau de vote">
+        <ion-select-option *ngFor="let item of bureaux_vote_list" [value]="item.code_bv">{{ item.bureau_vote }}</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item class="redBottom">
+      <ion-label position="stacked">Observations</ion-label>
+      <textarea elastic rows="5" color="success" [(ngModel)]="message" name="message" aria-required="message"></textarea>
+    </ion-item>
+
+    <ion-button expand="block" style="margin-left: 20px; margin-right: 20px;" (click)="photo()" class="camBtn">
+      <ion-icon style="color:#FFF; margin-right: 7px;" name="camera-outline"></ion-icon> Photo
+    </ion-button>
+
+    <img style="margin-top: 20px; margin-bottom: 20px;" src="{{ photo_observation }}" *ngIf="photo_observation">
+
+    <ion-button expand="block" (click)="saveObservation()" class="loginBtn"><ion-icon style="color:#FFF; margin-right: 7px;" name="save-outline"></ion-icon> Enregister</ion-button>
+    
+  </ion-list>
+
+</ion-content>

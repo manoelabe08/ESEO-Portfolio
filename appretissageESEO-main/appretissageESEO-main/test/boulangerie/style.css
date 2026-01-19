@@ -1,0 +1,38 @@
+body {
+    font-family: Arial;
+    margin: 40px;
+    background: #f8f8f8;
+}
+
+h1 {
+    color: #d4a574;
+}
+
+form {
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input,
+select,
+button {
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    background: #d4a574;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #d4a574;
+    text-decoration: none;
+}

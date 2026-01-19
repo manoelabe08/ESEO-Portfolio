@@ -1,0 +1,28 @@
+textarea {
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.loginBtn {
+    --background: #DB812E;
+    margin-top:12%; 
+    color:#FFF; 
+    text-align:center; 
+    font-size: 16px;
+}
+
+.camBtn {
+    --background: #61A061;
+    margin-top:12%; 
+    color:#FFF; 
+    text-align:center; 
+    font-size: 16px;
+}
+
+ion-item.redBottom {
+    border: 2px solid #DB812E;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,52 @@
+#container {
+  text-align: center;
+}
+
+.boxContent {
+  width:94%;
+  margin:10px auto;
+  color: #FFF;
+  font-weight: normal;
+  font-size: small;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.boxContent ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.h_130 {
+  height: 130px;
+}
+
+.counter {
+  font-family: Menlo, Andale Mono, monospace;
+  font-size: 4em;
+  text-align: center;
+}
+
+.green {
+  background-color: #61A061;
+}
+
+.orange {
+  background-color: #DB812E;
+}
+
+.footer {
+  width: 50%;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.logout {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}

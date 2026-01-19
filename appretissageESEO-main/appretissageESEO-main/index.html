@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprentissage MANOEL ABE</title>
+    <link rel="stylesheet" href="css/style-global.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <h1>📚 Apprentissage MANOEL ABE</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#about">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Bienvenue dans mon Portfolio d'Apprentissage</h2>
+            <p>Découvrez mes projets de formation en développement web</p>
+            <a href="#projets" class="btn btn-primary">Voir les projets</a>
+        </div>
+    </section>
+
+    <!-- PROJETS SECTION -->
+    <section class="projets" id="projets">
+        <div class="container">
+            <h2 class="section-title">📋 Mes Projets</h2>
+
+            <div class="cards-grid">
+                <!-- CARTE 1: BIBLIOTHÈQUE -->
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <h3>Gestion Bibliothèque</h3>
+                    <p>Gestion de livres et auteurs avec PHP et MySQL. Opérations CRUD complètes.</p>
+                    <div class="card-tags">
+                        <span class="tag html">HTML</span>
+                        <span class="tag php">PHP</span>
+                        <span class="tag mysql">MySQL</span>
+                    </div>
+                    <a href="bibliotheque/index.html" class="btn btn-secondary">Accéder →</a>
+                </div>
+
+                <!-- CARTE 2: BOULANGERIE -->
+                <div class="card">
+                    <div class="card-icon">🥐</div>
+                    <h3>Système de Commande</h3>
+                    <p>Commande de boulangerie interactif. 2 versions: JavaScript et PHP.</p>
+                    <div class="card-tags">
+                        <span class="tag html">HTML</span>
+                        <span class="tag js">JavaScript</span>
+                        <span class="tag php">PHP</span>
+                    </div>
+                    <a href="boulangerie/index.html" class="btn btn-secondary">Accéder →</a>
+                </div>
+
+                <!-- CARTE 3: ÉCOLE -->
+                <div class="card">
+                    <div class="card-icon">🏫</div>
+                    <h3>Site Éclair d'École</h3>
+                    <p>Mini-site vitrine d'école avec présentation et stylisation CSS.</p>
+                    <div class="card-tags">
+                        <span class="tag html">HTML</span>
+                        <span class="tag css">CSS</span>
+                        <span class="tag bootstrap">Bootstrap</span>
+                    </div>
+                    <a href="ecole/index.html" class="btn btn-secondary">Accéder →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏫</div>
+                    <h3>Club informatique <br> du Lycée</h3>
+                    <p>Mini-site vitrine d'école avec présentation et stylisation CSS.</p>
+                    <div class="card-tags">
+                        <span class="tag html">HTML</span>
+                        <span class="tag css">CSS</span>
+                        <span class="tag bootstrap">Bootstrap</span>
+                    </div>
+                    <a href="ecole/index.html" class="btn btn-secondary">Accéder →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🏫</div>
+                    <h3>Mon CV</h3>
+                    <p>Mini-site vitrine d'école avec présentation et stylisation CSS.</p>
+                    <div class="card-tags">
+                        <span class="tag html">HTML</span>
+                        <span class="tag css">CSS</span>
+                        <span class="tag bootstrap">Bootstrap</span>
+                    </div>
+                    <a href="ecole/index.html" class="btn btn-secondary">Accéder →</a>
+                </div>
+
+                <!-- CARTE 4: TESTS -->
+                <div class="card">
+                    <div class="card-icon">🔬</div>
+                    <h3>Expérimentations</h3>
+                    <p>Divers tests et expériences de code en HTML, CSS, JavaScript et PHP.</p>
+                    <div class="card-tags">
+                        <span class="tag html">HTML</span>
+                        <span class="tag css">CSS</span>
+                        <span class="tag js">JavaScript</span>
+                    </div>
+                    <a href="test/login.php" class="btn btn-secondary">Accéder →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">À Propos de ce Portail</h2>
+            <div class="about-content">
+                <p>
+                    Ce portail centralise tous mes projets de formation en développement web.
+                    Chaque projet est une étape dans mon apprentissage des technologies du web.
+                </p>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <strong>Frontend:</strong> HTML5, CSS3, JavaScript, Bootstrap
+                    </div>
+                    <div class="skill-item">
+                        <strong>Backend:</strong> PHP, MySQL, Sessions, CRUD
+                    </div>
+                    <div class="skill-item">
+                        <strong>Concepts:</strong> Forms, DOM, AJAX, Validation, Design Responsive
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;
+                <script>
+                    const startYear = 2025;
+                    const currentYear = new Date().getFullYear();
+                    document.write(
+                        startYear === currentYear
+                            ? startYear
+                            : startYear + " - " + currentYear
+                    );
+                </script>
+                | Projet d'Apprentissage Web de MANOEL ABE |
+                3<sup>ème</sup> année Ingénieur ESEO - Paris Vélizy <br>
+                Tous droits réservés – reproduction interdite sans mention de la source.
+                | Portfolio de Formation |
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+</body>
+
+</html>

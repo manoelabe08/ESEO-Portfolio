@@ -1,0 +1,112 @@
+<ion-content>
+  <ion-toolbar>
+
+    <ion-title>Résultats</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="saveSaisie()">
+        <ion-icon style="color:#FFF;" name="save-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+  <div style="width: 60%; margin:0 auto 30px auto;">
+    <img src="../assets/Logo-CEI.png">
+  </div>
+
+  <h3 style="text-align: center;">Scrutin présidentiel <strong style="color:#DB812E;">2025</strong></h3>
+
+  <ion-list style="margin-bottom: 60px;">
+    <ion-item class="redBottom" style="margin-left: 20px; margin-right: 20px;">
+      <ion-label>Date du jour</ion-label>
+      <p>{{ date_jour }}</p>
+    </ion-item>
+
+    <ion-card>
+      <ion-card-header style="background-color:#DB812E;">
+        <ion-card-subtitle style="color: #FFF;">Résultats</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content style="padding-top: 20px;">
+        <ion-item class="greenBottom">
+          <ion-select label="Bureau de vote" labelPlacement="stacked" [(ngModel)]="code_bv" name="code_bv" interface="action-sheet" aria-required="code_bv" placeholder="Choix du bureau de vote">
+            <ion-select-option *ngFor="let item of bureaux_vote_list" [value]="item.code_bv">{{ item.bureau_vote }}</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class="greenBottom">
+          <ion-input type="number" label="Nombre total de votants" labelPlacement="stacked"
+            [(ngModel)]="total_votants" name="total_votants" aria-required="total_votants"></ion-input>
+        </ion-item>
+
+        <ion-item class="greenBottom">
+          <ion-input type="number" label="Nombre de bulletins nuls" labelPlacement="stacked"
+            [(ngModel)]="nb_bulletins_nuls" name="nb_bulletins_nuls" aria-required="nb_bulletins_nuls"></ion-input>
+        </ion-item>
+
+        <ion-item class="greenBottom">
+          <ion-input type="number" label="Nombre de bulletins blancs" labelPlacement="stacked"
+            [(ngModel)]="nb_bulletins_blancs" name="nb_bulletins_blancs" aria-required="nb_bulletins_blancs"></ion-input>
+        </ion-item>
+
+        <ion-card style="margin-left: 0; margin-right: 0;">
+          <ion-card-header style="background-color:#61A061;">
+            <ion-card-subtitle style="color: #FFF;">Par candidats</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content style="padding-top: 20px; border: 1px solid #61A061;">
+            <ion-item class="greenBottom">
+              <ion-select label="Candidat" labelPlacement="stacked" [(ngModel)]="id_candidat" name="id_candidat" interface="action-sheet" aria-required="id_candidat" placeholder="Choix du candidat">
+                <ion-select-option *ngFor="let item of candidats_list" [value]="item.id">{{ item.candidat }}</ion-select-option>
+              </ion-select>
+            </ion-item>
+
+            <ion-item class="greenBottom">
+              <ion-input type="number" label="Score" labelPlacement="stacked"
+                [(ngModel)]="score_candidat" name="score_candidat" aria-required="score_candidat"></ion-input>
+            </ion-item>
+
+            <ion-button expand="block" (click)="addCandidatResultat()" class="camBtn">
+              <ion-icon style="color:#FFF; margin-right: 7px;" name="save-outline"></ion-icon> Ajouter résultat
+            </ion-button>
+
+
+            <ion-list style="margin-top: 20px;" *ngIf="score.length!=0">
+              <ion-item *ngFor="let item of resultats_candidat">
+                <ion-avatar slot="start">
+                  <img [src]="item.photo">
+                </ion-avatar>
+                <ion-label>
+                  <h2>{{ item.candidat }}</h2>
+                  <h6 style="color: #979494;">{{ item.nom_parti }}</h6>
+                  <ion-badge style="color:#FFF; background: #DB812E;">
+                    {{ item.score }}
+                  </ion-badge>
+                </ion-label>
+                <ion-button slot="end" (click)="deleteResultat(item.candidat_id)" color="danger">
+                  <ion-icon name="trash"></ion-icon>
+                </ion-button>
+              </ion-item>
+            </ion-list>
+
+          </ion-card-content>
+        </ion-card>
+
+        <ion-button expand="block" style="margin-left: 20px; margin-right: 20px;" (click)="photo()" class="camBtn">
+          <ion-icon style="color:#FFF; margin-right: 7px;" name="camera-outline"></ion-icon> Photo
+        </ion-button>
+
+        <img style="margin-top: 20px;" src="{{ photo_resultat }}" *ngIf="photo_resultat">
+
+      </ion-card-content>
+    </ion-card>
+
+
+    <ion-button expand="block" style="margin-left: 20px; margin-right: 20px;" [disabled]="isBtnDisabled" (click)="saveSaisie()" class="loginBtn">
+      <ion-icon style="color:#FFF; margin-right: 7px;" name="save-outline"></ion-icon> Enregister
+    </ion-button>
+
+  </ion-list>
+
+</ion-content>

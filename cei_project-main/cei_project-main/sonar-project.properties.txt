@@ -1,0 +1,22 @@
+# nom du projet
+sonar.projectKey=cei_project
+sonar.projectName=CEI Project
+
+# chemin de l'application
+sonar.sources=.
+
+# langage utilisé
+sonar.language=js
+
+# encodage
+sonar.sourceEncoding=UTF-8
+
+# Exclure les dossiers inutiles (par exemple node_modules)
+sonar.exclusions=node_modules/**
+
+# URL du serveur SonarQube local
+sonar.host.url=http://localhost:9000
+
+# Authentification (si activée)
+# sonar.login=admin
+# sonar.password=admin123

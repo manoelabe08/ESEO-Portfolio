@@ -1,0 +1,7 @@
+{
+  "name": "cei_resultats_2025",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

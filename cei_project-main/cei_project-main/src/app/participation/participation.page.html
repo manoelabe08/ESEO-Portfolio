@@ -1,0 +1,57 @@
+<ion-content>
+  <ion-toolbar>
+
+    <ion-title>Nombre de votant par heure</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="saveVotant()">
+        <ion-icon style="color:#FFF;" name="save-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+  <div style="width: 60%; margin:0 auto 30px auto;">
+    <img src="../assets/Logo-CEI.png">
+  </div>
+
+  <h3 style="text-align: center;">Scrutin présidentiel <strong style="color:#DB812E;">2025</strong></h3>
+
+  <ion-list style="margin-bottom: 60px;">
+    <ion-item class="redBottom" style="margin-left: 20px; margin-right: 20px;">
+      <ion-label>Date du jour</ion-label>
+      <p>{{ date_jour }}</p>
+    </ion-item>
+
+    <ion-card>
+      <ion-card-header style="background-color:#DB812E;">
+        <ion-card-subtitle style="color: #FFF;">Participation</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content style="padding-top: 20px;">
+        <ion-item class="greenBottom">
+          <ion-select label="Bureau de vote" labelPlacement="stacked" [(ngModel)]="code_bv" name="code_bv" interface="action-sheet" aria-required="code_bv" placeholder="Choix du bureau de vote">
+            <ion-select-option *ngFor="let item of bureaux_vote_list" [value]="item.code_bv">{{ item.bureau_vote }}</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+
+        <ion-item class="greenBottom">
+          <ion-input type="number" label="Nombre de votant homme" labelPlacement="stacked"
+            [(ngModel)]="nb_votant_homme" name="nb_votant_homme" aria-required="nb_votant_homme"></ion-input>
+        </ion-item>
+
+        <ion-item class="greenBottom">
+          <ion-input type="number" label="Nombre de votant femme" labelPlacement="stacked"
+            [(ngModel)]="nb_votant_femme" name="nb_votant_femme" aria-required="nb_votant_femme"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-button expand="block" style="margin-left: 20px; margin-right: 20px;" (click)="saveVotant()" class="loginBtn">
+      <ion-icon style="color:#FFF; margin-right: 7px;" name="save-outline"></ion-icon> Enregister
+    </ion-button>
+
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,6 @@
+projectKey=cei_project
+serverUrl=http://localhost:9000
+serverVersion=25.7.0.110598
+dashboardUrl=http://localhost:9000/dashboard?id=cei_project
+ceTaskId=131c012b-b2c5-40b0-9a40-759f454d39b4
+ceTaskUrl=http://localhost:9000/api/ce/task?id=131c012b-b2c5-40b0-9a40-759f454d39b4

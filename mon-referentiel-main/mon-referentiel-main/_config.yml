@@ -1,0 +1,5 @@
+title: Mon site web
+description: Bienvenue sur mon site web
+baseurl: /
+url: https://manoelabe08.github.io
+theme: jekyll-theme-hyde

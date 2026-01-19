@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>École | Apprentissage MANOEL ABE</title>
+    <link rel="stylesheet" href="../css/style-global.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <h1>Apprentissage MANOEL ABE</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#projets">Projets</a></li>
+                <li><a href="index.html" class="active">École</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" style="padding-top: 2rem;">
+        <div class="breadcrumb">
+            <a href="../index.html">Accueil</a>
+            <span class="separator">/</span>
+            <span>École</span>
+        </div>
+    </div>
+    <section class="hub-header">
+        <div class="container">
+            <h1>🏫 Mini-Site d'École</h1>
+            <p>Site vitrine d'une école avec HTML, CSS et Bootstrap</p>
+        </div>
+    </section>
+    <section class="container" style="padding: 2rem 0;">
+        <div class="hub-content">
+            <div class="card">
+                <div class="card-icon">📄</div>
+                <h3>TP1: Structure HTML</h3>
+                <p>Création de la structure de base du site vitrine de l'école.</p>
+                <div class="card-tags">
+                    <span class="tag html">HTML</span>
+                </div>
+                <a href="tp1/index.html" class="btn btn-secondary">Accéder →</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>TP2: Style CSS</h3>
+                <p>Stylisation du site avec CSS et images personnalisées.</p>
+                <div class="card-tags">
+                    <span class="tag html">HTML</span>
+                    <span class="tag css">CSS</span>
+                </div>
+                <a href="tp2/index.html" class="btn btn-secondary">Accéder →</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🎓</div>
+                <h3>Formations</h3>
+                <p>Page détaillée des formations proposées par l'école.</p>
+                <div class="card-tags">
+                    <span class="tag html">HTML</span>
+                    <span class="tag css">CSS</span>
+                </div>
+                <a href="formations.html" class="btn btn-secondary">Accéder →</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" style="margin-top: 3rem;">
+        <div class="container">
+            <p>&copy;
+                <script>
+                    const startYear = 2025;
+                    const currentYear = new Date().getFullYear();
+                    document.write(
+                        startYear === currentYear
+                            ? startYear
+                            : startYear + " - " + currentYear
+                    );
+                </script>
+                | Projet d'Apprentissage Web de MANOEL ABE |
+                3<sup>ème</sup> année Ingénieur ESEO - Paris Vélizy |
+                Tous droits réservés – reproduction interdite sans mention de la source.
+                | École
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
